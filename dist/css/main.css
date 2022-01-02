@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+h2 {
+  color: #14213d;
+  margin-bottom: 20px;
+  font-size: 38px;
+  line-height: 1.1;
+}
+
+@media (max-width: 479px) {
+  h2 {
+    font-size: 28px;
+  }
+}
+
+.container {
+  background: #14213d;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width: 879px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.case-input {
+  background-image: url("../../image/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+}
+
+@media (max-width: 479px) {
+  .case-input {
+    padding: 40px;
+  }
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #14213d8a;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.case-form {
+  background: #e5e5e5;
+  padding: 30px;
+  z-index: 1;
+}
+
+#textarea {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  width: 100%;
+  min-height: 200px;
+}
+
+#textarea:focus {
+  outline: 1px dotted #14213d;
+}
+
+.cnvt-btn {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+@media (max-width: 479px) {
+  .cnvt-btn {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cnvt-btn button {
+  cursor: pointer;
+  border: none;
+  background: #14213d;
+  color: #ffffff;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.cnvt-btn button:hover {
+  background: #000000;
+}
+
+.case-output {
+  background-image: url("../../image/pattern.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
+  padding: 40px;
+  height: 100vh;
+  overflow: scroll;
+  z-index: 1;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=main.css.map */
